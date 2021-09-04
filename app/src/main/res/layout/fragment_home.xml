@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/homeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_bar_dimen_50dp"
+            android:layout_margin="@dimen/general_dimen_25"
+            android:background="@drawable/textview_border"
+            android:drawableEnd="@drawable/ic_search_24"
+            android:drawablePadding="@dimen/general_content_16dp"
+            android:hint="@string/enter_movie_name"
+            android:imeOptions="actionNone"
+            android:inputType="text"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movieListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_below="@id/searchBar" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_content_8dp"
+        app:cardElevation="@dimen/general_content_8dp"
+        app:cardCornerRadius="@dimen/general_content_16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/general_content_8dp"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/movieImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/general_dimen_5dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/movieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/general_dimen_5dp"
+                android:layout_toEndOf="@id/movieImage"
+                android:layout_toStartOf="@id/favoritesIcon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:ignore="RelativeOverlap" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/favoritesIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/general_dimen_5dp"
+                app:srcCompat="@drawable/ic_favorite_unchecked_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/movieDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieName"
+                android:layout_margin="@dimen/general_dimen_5dp"
+                android:layout_toEndOf="@id/movieImage" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/movieYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieDirector"
+                android:layout_margin="@dimen/general_dimen_5dp"
+                android:layout_toEndOf="@id/movieImage" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/movieSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieYear"
+                android:layout_margin="@dimen/general_dimen_5dp"
+                android:layout_toEndOf="@id/movieImage" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_dimen_5dp">5dp</dimen>
+    <dimen name="general_dimen_25">25dp</dimen>
+    <dimen name="search_bar_dimen_50dp">50dp</dimen>
+    <dimen name="search_bar_dimen_80dp">80dp</dimen>
+    <dimen name="general_content_16dp">16dp</dimen>
+    <dimen name="general_content_8dp">8dp</dimen>
+</resources>
